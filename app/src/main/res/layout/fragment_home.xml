@@ -1,0 +1,130 @@
+<FrameLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context="com.collage.vnrvjiet.Vnrvjiet"
+
+    android:background="@color/white"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <com.arlib.floatingsearchview.FloatingSearchView
+        android:id="@+id/floating_search_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:floatingSearch_close_search_on_keyboard_dismiss="true"
+        app:floatingSearch_dimBackground="false"
+        app:floatingSearch_leftActionMode="showSearch"
+        app:floatingSearch_searchBarMarginLeft="4.0dip"
+        app:floatingSearch_searchBarMarginRight="4.0dip"
+        app:floatingSearch_searchBarMarginTop="7.0dip"
+        app:floatingSearch_searchHint="@string/search"
+        app:floatingSearch_showSearchKey="true">
+
+    </com.arlib.floatingsearchview.FloatingSearchView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingBottom="6.0dip"
+        android:paddingTop="110.0dip">
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15.0dip"
+                android:layout_marginLeft="8.0dip"
+                android:layout_marginRight="4.0dip"
+                android:layout_marginTop="4.0dip">
+
+                <ImageView
+                    android:id="@+id/gallery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/gallery" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4.0dip"
+                android:layout_marginLeft="8.0dip"
+                android:layout_marginRight="4.0dip"
+                android:layout_marginTop="4.0dip">
+
+                <ImageView
+                    android:id="@+id/categories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/categories" />
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15.0dip"
+                android:layout_marginLeft="4.0dip"
+                android:layout_marginRight="8.0dip"
+                android:layout_marginTop="1.0dip">
+
+                <ImageView
+                    android:id="@+id/updates"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/updates" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4.0dip"
+                android:layout_marginLeft="4.0dip"
+                android:layout_marginRight="8.0dip"
+                android:layout_marginTop="4.0dip">
+
+                <ImageView
+                    android:id="@+id/cams"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/cams" />
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</FrameLayout>

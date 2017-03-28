@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/about_us"
+        android:title="About us"
+       app:showAsAction="never"  />
+
+    <item android:id="@+id/location"
+          android:title="Route Map"
+          app:showAsAction="never"  />
+
+    <item android:id="@+id/ic_settings"
+          android:title="settings"
+          android:icon="@drawable/ic_settings_black_24dp"
+          app:showAsAction="always">
+
+        <menu>
+            <item  android:id="@+id/gray"
+                android:title="Gray"
+               />
+            <item  android:id="@+id/pink"
+                android:title="Pink"
+                />
+            <item  android:id="@+id/blue"
+                android:title="Blue"
+                />
+            <item  android:id="@+id/black"
+                android:title="Black"
+                />
+            <item  android:id="@+id/green"
+                android:title="Green"
+                />
+
+
+
+        </menu>
+    </item>
+
+
+</menu>
